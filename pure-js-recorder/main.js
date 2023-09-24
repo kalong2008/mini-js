@@ -46,7 +46,7 @@ function globalstoprecording() {
 function globalsubmit() {
   document.getElementById("audiodiv").style.display = "none";
   document.getElementById("completediv").style.display = "";
-  setTimeout("window.location.href = 'https://refresh.bokss.org.hk/'", 5000);
+  setTimeout("window.location.href = '[redirect page]'", 5000);
 }
 
 function globalrestart() {
@@ -83,7 +83,7 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
   document.getElementById("audiodiv").style.display = "none";
   document.getElementById("completediv").style.display = "";
-  setTimeout("window.location.href = 'https://refresh.bokss.org.hk/'", 5000);
+  setTimeout("window.location.href = '[redirect page]'", 5000);
   var data = new FormData(form);
   var action = e.target.action;
   fetch(action, {
