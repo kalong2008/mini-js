@@ -1,0 +1,56 @@
+<div class="text-center" id="recorddiv">
+  <a
+    class="inline-block btnRound-thin btnRound-orange"
+    id="record"
+    onclick="globalstartrecording()"
+    style="color: black"
+    ><b>錄音</b></a
+  >
+</div>
+
+<div class="text-center" id="timer">&nbsp;</div>
+
+<p>&nbsp;</p>
+
+<div class="text-center" id="stopdiv" style="display: none">
+  <a
+    class="inline-block btnRound-thin btnRound-orange"
+    id="stop"
+    onclick="globalstoprecording()"
+    style="color: black"
+    ><b>停止</b></a
+  >
+</div>
+
+<div id="audiodiv" style="display: none">
+  <audio controls="control" id="audio" style="margin: 0 auto; display: block">
+    &nbsp;
+  </audio>
+
+  <form
+    action="https://script.google.com/macros/s/AKfycbwPzWdK3g3h4kQGSZE1MIWUPMSmSUweJMISyzDVoIpErk8fr7sUfp4KwNSDHhPTikFe/exec"
+    id="dataurl-form"
+    method="post"
+    onsubmit="function(); return false;"
+  >
+    <input id="dataurl" name="dataurl" placeholder="dataurl" type="hidden" />
+    <div class="text-center">
+      <a
+        class="inline-block btnRound-thin btnRound-orange"
+        id="restart"
+        onclick="globalrestart()"
+        style="color: black"
+        ><b>重新開始</b></a
+      >
+      <input
+        class="inline-block btnRound-thin btnRound-orange"
+        type="submit"
+        value="提交"
+      />
+    </div>
+  </form>
+</div>
+
+<div class="text-center" id="completediv" style="display: none">
+  <b>你已完成提交，5秒後會轉到首頁</b>
+</div>
