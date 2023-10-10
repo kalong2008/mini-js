@@ -18,4 +18,6 @@
 
 9. disable to open window when submit form in html reference https://stackoverflow.com/questions/8756584/stop-a-html5-form-posting-refreshing-or-opening-a-new-window-onsubmit
 
+10. if the form have multiple input field, all the value in the input field will combine into one json like format
+
 the index.html cannot run, just use for record
